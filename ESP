@@ -1,0 +1,5 @@
+local players = game.Players:GetPlayers()
+
+for _, player in pairs(players) do
+    local character = player.Character or player.CharacterAdded:Wait()
+    if character then
